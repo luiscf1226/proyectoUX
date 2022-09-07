@@ -1,0 +1,53 @@
+.bienvenido-principal {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    background-color: #ffffff;
+    box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+
+   
+}
+.span-unitec-principal{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 13px;
+}
+.header-principal{
+    margin-top: 10%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 5%;
+}
+
+.img-principal{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+}
+.h2-principal{
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.button-principal{
+    background-color: #ffffff;
+    border: none;
+    margin-top: 35%;
+    margin-left: 60%;
+
+}
+.flecha{
+    margin-top: 4px;
+    margin-left: 3%;
+    font-size: 13px;
+}
+

@@ -1,0 +1,110 @@
+.login {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    background-color: #ffffff;
+    box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+
+}
+.span-unitec{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 13px;
+}
+.header{
+    margin-top: 10%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+.span-inicio{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-weight: 600;
+    font-size: 20px;
+}
+.input1{
+    margin-bottom: 15px;
+
+}
+input{
+    height: 40px;
+    background-color: #E1E1E1;
+    border: none;
+    text-align: center;
+    margin-bottom: 5%;
+    width: 100%;
+    border-radius: 25px;
+}
+::placeholder{
+    color:black;
+    font-size: 13px;
+    font-weight: 40px;
+}
+form{
+    margin-top: 5%;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+   
+}
+.span-olvidar{
+    margin-top: 5%;
+    text-align: right;
+    margin-right: 10%;
+    font-weight: 400;
+    font-size: 13px;
+}
+.button1{
+    align-items: center;
+    width: 80% !important;
+    border: none !important;
+    color: black !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    margin-top: 5%;
+    background-color: #E1E1E1 !important;
+}
+.button2{
+  
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    margin-top: 3%;
+    background-color: #ffffff !important;
+    border: 2px solid #E1E1E1 !important;
+    width: 80% !important;
+}
+.botones{
+    width: 80%;
+    text-align: center !important;
+    margin-bottom: 5% !important;
+    width: 100% !important;
+    border-radius: 25px !important;
+    height: 40px !important; 
+}
+hr{
+    margin-top: 15%;
+}
+.span-final{
+    margin-top: 15%;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+.dot{
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.img-mail{
+    margin: auto;
+    background-color: #ffffff !important;
+    width: 35px;
+    height: 35px;
+}
