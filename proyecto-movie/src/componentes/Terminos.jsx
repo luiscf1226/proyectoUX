@@ -22,7 +22,7 @@ function Terminos (){
                 <h4> <strong>Terminos y Condiciones de uso </strong></h4> <br/>
             </div>
 
-            <p>El titular no responde por la continuidad y disponibilidad del contenido, 
+            <p className="text-terminos">El titular no responde por la continuidad y disponibilidad del contenido, 
                 productos y/o servicios en a largo plazo, se realizará acciones que fomenten 
                 el buen funcionamiento de dicho sitio web sin responsabilidad alguna. 
                 El titular no se responsabiliza de que el software esté libre de errores 
