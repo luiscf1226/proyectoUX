@@ -22,23 +22,23 @@ function NuevaCuenta() {
                 <h4>Crear Cuenta</h4>
 
                 <div>
-                    <input type="text" placeholder="Nombre" className="nombreC" />
+                    <input type="text" placeholder="  Nombre" className="nombreC" />
                 </div>
 
                 <div>
-                    <input type="text" placeholder="Apellido" className="apellidoC" />
+                    <input type="text" placeholder="  Apellido" className="apellidoC" />
                 </div>
 
                 <div>
-                    <input type="email" placeholder="Correo" className="correoC" />
+                    <input type="email" placeholder="  Correo" className="correoC" />
                 </div>
 
                 <div>
-                    <input type="password" className="passC" placeholder="Password" />
+                    <input type="password" className="  passC" placeholder="Password" />
                 </div>
 
                 <div>
-                    <input type="password" className="repeatPassC" placeholder="Repeat Password" />
+                    <input type="password" className="  repeatPassC" placeholder="Repeat Password" />
                 </div>
 
             </div>

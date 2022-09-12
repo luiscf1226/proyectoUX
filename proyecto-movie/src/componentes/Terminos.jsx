@@ -14,12 +14,12 @@ function Terminos (){
     return(
         <div className="terminos">
 
-            <div className="heading">
-                <button onClick={()=>bienvenido()} className='button-principal' > 
-                    <i class="fa-solid fa-arrow-left fa-2xl"></i>
+            <div className="heading-terminos">
+                <button onClick={()=>bienvenido()} className='button-principal-heading' > 
+                    <i class="fa-solid fa-arrow-left fa-2xl "></i>
                 </button>
                 
-                <h4> <strong>Terminos y Condiciones de uso </strong></h4> <br/>
+                <h4 className="terminos-h4"> <strong>Términos y Condiciones de uso </strong></h4> <br/>
             </div>
 
             <p className="text-terminos">El titular no responde por la continuidad y disponibilidad del contenido, 

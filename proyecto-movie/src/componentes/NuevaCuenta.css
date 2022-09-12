@@ -23,8 +23,16 @@ div{
     height: 40px;
     background-color: var(--gris);
     border-radius: 14px;
+    border: none;
+    
 }
-
+::placeholder{
+    text-align: center;
+    height: 20px;
+    left: 53px;
+    font-size: 13px;
+    font-weight: 400;
+}
 .permisos, .notificaciones{
     display: flex;
     float: left; 
@@ -47,7 +55,7 @@ div{
 .bt-crear{
     border: none;
     background-color: var(--gris);
-    border-radius: 20px;
+    border-radius: 14px;
     width: 320px;
     height: 40px;
     padding: 5px;

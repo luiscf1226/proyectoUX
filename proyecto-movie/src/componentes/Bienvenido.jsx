@@ -17,7 +17,7 @@ function Bienvenido() {
             <h1 className='header-principal'>Bienvenido/a</h1>
             <img className='img-principal' src={logo}></img>
             <h2 className='h2-principal'>Mensaje/Slogan</h2>
-            <button onClick={()=>ingresar()} className='button-principal' >
+            <button onClick={()=>ingresar()} className='button-principal-bienvenido' >
                 Comenzar 
                 <i class="fa-solid fa-arrow-right flecha"></i>
                 

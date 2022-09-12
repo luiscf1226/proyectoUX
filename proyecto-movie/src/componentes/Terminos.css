@@ -6,7 +6,8 @@
     padding: 20px;
 }
 
-.heading{
+.heading-terminos{
+    gap: 0px;
     display: flex;
     float: left;
     align-items: center;
@@ -23,16 +24,19 @@
 }
 
 .text-terminos{
+    margin-top: 30%;
     line-height: 2.0;
     text-align: justify;
+    font-size: smaller;
 }
 
-h4{
-    align-items: center;
-    justify-content: center;
-}
-
-.button-principal{
+.button-principal-heading{
+    margin-bottom: 65px;
     background-color: #ffffff;
     border: none;
+}
+.terminos-h4{
+    position: static;
+    margin-top: 6px;
+    margin-bottom: 45px;
 }
