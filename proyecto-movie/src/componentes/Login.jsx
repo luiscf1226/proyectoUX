@@ -5,19 +5,25 @@ import React, { Component } from 'react';
 import gmail from '../images/gmail.png';
 import facebook from '../images/face.jpg';
 import { useNavigate } from "react-router-dom";
+import logoprincipal from '../images/logo-main.png';
 
 
 function Login(){
-
+    
     const navigate= useNavigate();
     const crearcuenta=()=>{
         navigate('/Crear-cuenta'); 
+    }
+    const entrar=()=>{
+        navigate('/Cines'); 
     }
    
     return (
         <div className='login'>
             <span className='span-unitec'>UNITEC</span>
-            <h1 className='header'>LOGO</h1>
+            <h1 className='header'>
+                <img src={logoprincipal}></img>
+            </h1>
             <span className='span-inicio'>Iniciar sesión</span>
             <form>
                 <div className="form-login">
@@ -31,7 +37,7 @@ function Login(){
             </form>
             <span className='span-olvidar'>¿Olvidaste tu contraseña?</span>
             <div className="botones">
-                <button  className='button1'>Iniciar Sesión</button>
+                <button  onClick={()=>entrar()} className='button1'>Iniciar Sesión</button>
                 <button  className='button2' onClick={()=>crearcuenta()}>Crear Cuenta</button>
             </div>
             

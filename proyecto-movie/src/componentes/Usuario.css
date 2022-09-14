@@ -1,0 +1,119 @@
+.usuario{
+    width: 400px;
+    height: 550px;
+    font-family: 'Montserrat';
+    background-color: #fff;
+    padding: 20px;
+}
+.span-unitec-principal-u{
+    margin-top: -10px;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 13px;
+    color: #2E3054;
+}
+.logomain-u{
+    width: 113px;
+    height: 39px;
+    left: 46px;
+    top: 78px;
+}
+.bg-user-u{
+    
+    width: 290px;
+    height: 162px;
+    left: 13px;
+    top: 131px;
+    border-radius: 36px;
+    margin-left:  8%;
+}
+.p-user-img{
+    position: relative;
+    width: 147px;
+    height: 147px;
+    left: 105px;
+    top: 260px;
+    margin-top: -160%;
+}
+
+.form-user-1{
+    display: grid;
+margin-top: 15px;
+}
+.membresia-u{
+    width: 107px;
+    height: 27px;
+    left: 31px;
+    top: 492px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    text-align: center;
+    letter-spacing: -0.408px;
+
+    color: #2E3054;
+    margin-left: 5%;
+}
+.select-mem-u{
+    width: 300px;
+    height: 40px;
+    margin-left: 5%;
+    background: rgba(46, 48, 84, 0.18);
+    border-radius: 14px;
+}
+.form-user-2{
+    display: grid;
+   
+}
+.idioma-u{
+    width: 107px;
+    height: 27px;
+    left: 31px;
+    top: 492px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    text-align: center;
+    letter-spacing: -0.408px;
+
+    color: #2E3054;
+
+}
+.select-idioma-u{
+    width: 300px;
+    height: 40px;
+    left: 27px;
+    top: 519px;
+    margin-left: 5%;
+    background: rgba(46, 48, 84, 0.18);
+    border-radius: 14px;
+}
+.user-bar-u{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    font-size: 25px;
+    color:#2E3054 !important;
+   
+   
+}
+.logos-u-bara{
+    margin-top: -5%;
+    color:#2E3054;
+    border: none;
+    background-color: #ffffff;
+
+}
+.linea-r{
+    margin-top: 10%;
+}

@@ -11,8 +11,10 @@
 .span-unitec{
     margin-top: 5%;
     margin-left: 5%;
-    font-weight: 400;
+    font-weight: bolder !important;
     font-size: 13px;
+    color:#2E3054;
+
 }
 .header{
     margin-top: 10%;
@@ -21,9 +23,10 @@
     font-size: 32px;
 }
 .span-inicio{
+    color:#2E3054;
     margin-top: 5%;
     margin-left: 10%;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 20px;
 }
 .input1,.input2{
@@ -54,10 +57,11 @@ form{
    
 }
 .span-olvidar{
+    color:#2E3054;
     margin-top: 5%;
     text-align: right;
     margin-right: 10%;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 13px;
 }
 .button1{
@@ -65,11 +69,11 @@ form{
     height: 40px !important;
     align-items: center;
     border: none !important;
-    color: black !important;
-    font-weight: 600 !important;
+    color: white !important;
+    font-weight: 400 !important;
     font-size: 15px !important;
     margin-top: 5%;
-    background-color: #E1E1E1 !important;
+    background-color:#2E3054 !important;
     border-radius: 14px !important;
 }
 .button2{

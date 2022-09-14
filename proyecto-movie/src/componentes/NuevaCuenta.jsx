@@ -1,17 +1,28 @@
 import React from "react";
-import './NuevaCuenta.css'
-
+import './NuevaCuenta.css';
+import logomain from '../images/logo-main.png';
+import { useNavigate } from "react-router-dom";
 function NuevaCuenta() {
 
+    const navigate= useNavigate();
+    const bienvenido=()=>{
+        navigate('/login'); 
+    }
 
 
 
     return (
-
+        
         <div className="principal-frame">
-
+            <span className='span-unitec'>UNITEC<br></br>
+            <button onClick={()=>bienvenido()} className="btn-flecha-crear">
+                <i class="fa-solid fa-arrow-left fa-2xl flecha-crear"></i>
+            </button>
+           
+            </span>
+           
             <div className="heading-crear">
-                <strong>LOGO</strong>
+                <img src={logomain} className='img-crear'></img>
             </div>
 
             <br />
@@ -66,7 +77,7 @@ function NuevaCuenta() {
 
 
             <div className="boton-crear">
-                <button className="bt-crear"><strong>Crear Cuenta</strong></button>
+                <button onClick={()=>bienvenido()} className="bt-crear"><strong>Crear Cuenta</strong></button>
             </div>
             
 

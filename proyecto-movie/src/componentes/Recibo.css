@@ -1,0 +1,149 @@
+.recibo-r{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    background-color: #ffffff;
+    box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+}
+.span-unitec-principal-r{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-weight: 400;
+    font-size: 13px;
+    color: #2E3054;
+}
+.logomain-r{
+    margin-left: 5%;
+    width: 113px;
+    height: 39px;
+    left: 46px;
+    top: 78px;
+}
+.recibo-m-div{
+    text-align: center;
+    width: 272px;
+    height: 358px;
+    left: 23px;
+    top: 209px;
+
+    background: rgba(46, 48, 84, 0.18);
+    border-radius: 50px;
+    margin-left: 15%;
+}
+.recibo-r-div{
+ margin-left: 40%;
+    width: 40px;
+    height: 22px;
+    left: 168px;
+    top: 229px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+    
+
+    color: #2E3054;
+
+}
+.div-asientos-r{
+    margin-left: 40%;
+    width: 40px;
+    height: 22px;
+    left: 168px;
+    top: 229px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+
+    justify-content: center;
+    gap: 290%;
+    color: #2E3054;
+    display: flex;
+}
+.doted-r{
+    margin-top: 5%;
+}
+.div-cines-r{
+    margin-left: 40%;
+    width: 40px;
+    height: 22px;
+    left: 168px;
+    top: 229px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+
+    justify-content: center;
+    gap: 350%;
+    color: #2E3054;
+    display: flex;
+    margin-top: 5%;
+}
+.div-cines-r3{
+    margin-left: 40%;
+    width: 40px;
+    height: 22px;
+    left: 168px;
+    top: 229px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+
+    justify-content: center;
+    gap: 220%;
+    color: #2E3054;
+    display: flex;
+    margin-top: 5%;
+}
+.gracias-r{
+    width: 40px;
+    height: 22px;
+    left: 168px;
+    top: 229px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+    display: inline;
+
+    color: #2E3054;
+   
+
+}
+.qr-code-r{
+    display: block;
+
+    width: 113px;
+    height: 29px;
+    left: 46px;
+    top: 78px;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+}
+.logos-r-bara{
+    color:#2E3054;
+    border: none;
+    background-color: #ffffff;
+
+}

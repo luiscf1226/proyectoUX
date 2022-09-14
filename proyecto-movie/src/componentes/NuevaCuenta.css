@@ -50,19 +50,40 @@ div{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
+.btn-flecha-crear{
+    background-color: white;
+    border: none;
+    color:#2E3054;
+}
+.img-crear{
 
+width: 113px;
+height: 39px;
+left: 131px;
+top: 116px;
+
+}
 .bt-crear{
     border: none;
-    background-color: var(--gris);
+    background-color: #2E3054;
     border-radius: 14px;
     width: 320px;
     height: 40px;
     padding: 5px;
+    color: white;
+    font-weight: 300 !important;
 }
 
 .cuerpo-c{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    margin-top: -25px; /*for exact positioning */
+    margin-top: -15%; /* for relative positioning */
+}
+.flecha-crear{
+    margin-left: 5%;
 }

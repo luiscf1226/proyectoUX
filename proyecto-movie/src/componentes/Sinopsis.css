@@ -1,0 +1,234 @@
+.sinopsis{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    background-color: #ffffff;
+    box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+}
+.span-unitec-principal-sinop{
+    margin-top: -1%;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 10px;
+    color: #2E3054;
+}
+.img-info-sinop{
+    margin-top: -8%;
+    margin-left: 10%;
+    width: 300px;
+    height: 230px;
+    
+    border-radius: 36px 36px 0px 0px;
+}
+.div-info-sinopsis{
+    position: relative;
+    width: 350px;
+    height: 170px;
+    left: 13px;
+    top: 159px;
+
+    background: #2E3054;
+    border-radius: 36px;
+    margin-left:1%;
+    margin-top: -80%;
+
+}
+.sinopsis-peli-title{
+    
+    width: 289px;
+    height: 27px;
+    left: 19px;
+    top: 170px;
+    margin-left: 5%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    text-align: center;
+    letter-spacing: -0.408px;
+
+    color: #FFFFFF;
+}
+.sinopsis-peli-info{
+    margin-top: -8%;
+    width: 312px;
+    height: 83px;
+    left: 37px;
+    top: 229px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 183% */
+
+    letter-spacing: -0.408px;
+
+    color: #FFFFFF;
+    margin-left: 5%;
+}
+.div-sinop-peli-info{
+    width: 71px;
+    height: 22px;
+    left: 37px;
+    top: 194px;
+
+    background: #FFFFFF;
+    border-radius: 9px;
+    display: flex;
+    margin-bottom: 8%;
+}
+.btn-flecha-s{
+    display: flex;
+    margin-top: 5%;
+    color:#2E3054;
+}
+.info-sinop-nomain{
+    width: 61px;
+    height: 17px;
+    left: 42px;
+    top: 194px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 183% */
+
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #2E3054;
+    margin-top:-5%;
+}
+.mega-div-info-sinop{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.peli-bar-s{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    font-size: 25px;
+ margin-top: -25px;
+    color:#2E3054 !important;
+    margin-top: -5%;
+}
+.linea-div-s{
+     margin-top:5px;
+}
+.logos-peli-bara{
+    color:#2E3054 !important;
+}
+.btn-flecha-s{
+    border: none;
+    background-color: #ffffff;
+    margin-left: -1%;
+    margin-right: 3%;
+}
+.sinopsis-hoy{
+    
+    margin-top: 40%;
+    width: 54px;
+    height: 17px;
+    left: 29px;
+    top: 342px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 183% */
+
+    text-align: center;
+    letter-spacing: -0.408px;
+
+    color: #2E3054;
+
+}
+.hoy-cuadro-s{
+    text-align: center;
+    margin-top: 0%;
+    width: 71px;
+    height: 84px;
+    left: 29px;
+    top: 368px;
+
+    background: #2E3054;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.div-hoy-s{
+    display: flex;
+    justify-content: center;
+    gap:5%;
+}
+.div-man-s{
+    display: flex;
+    justify-content: center;
+    gap:5%;
+    margin-top: 0%;
+}
+.div-fut-s{
+    display: flex;
+    justify-content: center;
+    gap:5%;
+    margin-top: -5%;
+}
+.man-cuadro-s{
+    width: 71px;
+    height: 84px;
+    left: 29px;
+    top: 368px;
+
+    background: #2E3054;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+}
+.sinopsis-man{
+    
+    width: 54px;
+    height: 17px;
+    left: 29px;
+    top: 342px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 183% */
+
+    text-align: center;
+    letter-spacing: -0.408px;
+
+    color: #2E3054;
+
+}
+.info-cuadro-s{
+    width: 27px;
+    height: 22px;
+    left: 51px;
+    top: 375px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    /* identical to box height, or 183% */
+
+    letter-spacing: -0.408px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 15%;
+}

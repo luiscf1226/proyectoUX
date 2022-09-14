@@ -6,8 +6,8 @@
     height: 550px;
     background-color: #ffffff;
     box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+    color: #2E3054;
 
-   
 }
 .span-unitec-principal{
     margin-top: 5%;
@@ -18,9 +18,10 @@
 .header-principal{
     margin-top: 10%;
     text-align: center;
-    font-weight: 700;
+    font-weight: bolder !important;
     font-size: 32px;
-    margin-bottom: 5%;
+    
+    
 }
 
 .img-principal{
@@ -28,15 +29,16 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 184px;
-    height: 184px;
-    border-radius: 50%;
+    width: 267px;
+    border-radius: 138px;
 }
 .h2-principal{
-    margin-top: 5%;
+    
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+    margin-top: -25px; /*for exact positioning */
+    margin-top: -15%; /* for relative positioning */
 }
 
 .flecha{
@@ -48,6 +50,10 @@
     background-color: #ffffff;
     border: none;
     margin-left: 60%;
-    margin-top: 35%;
+    margin-top: 15%;
+    font-weight: bold;
+    margin-top: 30%; /*for exact positioning */
+    color:#2E3054;
+   
 }
 
