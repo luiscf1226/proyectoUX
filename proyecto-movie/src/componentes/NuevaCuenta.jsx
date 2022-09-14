@@ -2,6 +2,9 @@ import React from "react";
 import './NuevaCuenta.css';
 import logomain from '../images/logo-main.png';
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Axios from "axios";
+
 function NuevaCuenta() {
 
     const navigate= useNavigate();
@@ -9,6 +12,21 @@ function NuevaCuenta() {
         navigate('/login'); 
     }
 
+    const crearCuenta = () =>{
+        Axios.post('http://localhost:3001/register', {
+            Primer_Nombre: usernameReg,
+            Primer_Apellido: apellido,
+            Passwordl: passwordReg,
+            Correo: correo,
+            Telefono: "55555555"
+        })
+    }
+
+    const [usernameReg, setUernameReg] = useState('');
+    const [apellido, setApellido] = useState('');
+    const [correo, setCorreo] = useState('');
+    const [passwordReg, setPasswordReg] = useState ('');
+    const [password, setConfirmPass] = useState('');
 
 
     return (
@@ -33,23 +51,28 @@ function NuevaCuenta() {
                 <h4>Crear Cuenta</h4>
 
                 <div>
-                    <input type="text" placeholder="  Nombre" className="nombreC" />
+                    <input type="text" placeholder="  Nombre" className="nombreC" 
+                    onChange={(e) => {setUernameReg(e.target.value)}}/>
                 </div>
 
                 <div>
-                    <input type="text" placeholder="  Apellido" className="apellidoC" />
+                    <input type="text" placeholder="  Apellido" className="apellidoC" 
+                    onChange={(e) => {setApellido(e.target.value)}}/>
                 </div>
 
                 <div>
-                    <input type="email" placeholder="  Correo" className="correoC" />
+                    <input type="email" placeholder="  Correo" className="correoC" 
+                    onChange={(e) => {setCorreo(e.target.value)}}/>
                 </div>
 
                 <div>
-                    <input type="password" className="  passC" placeholder="Password" />
+                    <input type="password" className="  passC" placeholder="Password" 
+                    onChange={(e) => {setPasswordReg(e.target.value)}}/>
                 </div>
 
                 <div>
-                    <input type="password" className="  repeatPassC" placeholder="Repeat Password" />
+                    <input type="password" className="  repeatPassC" placeholder="Repeat Password" 
+                    onChange={(e) => {setConfirmPass(e.target.value)}}/>
                 </div>
 
             </div>
@@ -77,7 +100,7 @@ function NuevaCuenta() {
 
 
             <div className="boton-crear">
-                <button onClick={()=>bienvenido()} className="bt-crear"><strong>Crear Cuenta</strong></button>
+                <button onClick={()=> {bienvenido(); crearCuenta()}} className="bt-crear"><strong>Crear Cuenta</strong></button>
             </div>
             
 
