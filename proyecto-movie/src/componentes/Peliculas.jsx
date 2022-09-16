@@ -16,7 +16,10 @@ import { useNavigate } from "react-router-dom";
 function Peliculas (){
     const recibogo=()=>{
         navigate('/Recibo'); 
-    }
+    };
+    var duraciones=['82 min','90min','130 min','165 min','125 min'];
+    var generos=['Accion','Comedia','Terror','Accion','Suspenso'];
+    var ratings=['D','A','D','A','B'];
     var linksmovie=['superquien','tadeo','nopmovie','spidermovie','chicamovie'];
     var moviesarr=[superquien,tadeo,nopmovie,spidermovie,chicamovie];
     var arreglosinop=['Un actor en apuros que parece condenado a llevar la vida de un perdedor, finalmente obtiene un papel principal como un superhéroe llamado Badman. Siente que todo es posible, pero el destino ataca de nuevo.',
@@ -25,6 +28,9 @@ function Peliculas (){
     'Spider-Man ahora revelado, nuestro amistoso lanzador de telarañas del vecindario está desenmascarado y ya no puede separar su vida normal como Peter Parker de las altas apuestas de ser un superhéroe.',
     'Abandonada a los seis años, Kya es una joven sensible, inteligente y de una belleza insólita que ha sobrevivido en soledad en las marismas, con la naturaleza como única amiga.']
     var moviesarr2=['Super ¿Quien?','Tadeo Jones 3','¡Nop!','Spider-Man','La Chica Salvaje'];
+    var [duracion,setDura]=useState('82 min');
+    var [genero,setGen]=useState('Accion');
+    var [rating,setRating]=['D'];
     var [imgpeli,setImg]=useState(superquien);
     var [cont,setCont]=useState(0);
     var [imgpeli2,setImg2]=useState('Super ¿Quien?');
@@ -41,6 +47,9 @@ function Peliculas (){
         setImg2(imgpeli2=moviesarr2[cont]);
         setSinop(sinopsis=arreglosinop[cont]);
         setLink(imgLink=linksmovie[cont]);
+        setDura(duracion=duraciones[cont]);
+        setGen(genero=generos[cont]);
+        setRating(rating=ratings[cont]);
     }
     const retornocines=()=>{
         navigate('/Cines'); 
@@ -58,11 +67,15 @@ function Peliculas (){
         setImg2(imgpeli2=moviesarr2[cont2]);
         setSinop(sinopsis=arreglosinop[cont2]);
         setLink(imgLink=linksmovie[cont2]);
+        setDura(duracion=duraciones[cont2]);
+        setGen(genero=generos[cont2]);
+        setRating(rating=ratings[cont2]);
+        
     }
     const navigate= useNavigate();
     const Sinopsis=()=>{
         console.log('prop a pasar: '+imgpeli2)
-        navigate('/Sinopsis',{state:{name:imgpeli2,sinop:sinopsis,link:imgLink}}); 
+        navigate('/Sinopsis',{state:{name:imgpeli2,sinop:sinopsis,link:imgLink,generop:genero,duracionp:duracion,ratingp:rating}}); 
     }
     return(
         <div className="peliculas">

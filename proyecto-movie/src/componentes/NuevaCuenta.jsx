@@ -6,20 +6,51 @@ import { useState } from "react";
 import Axios from "axios";
 
 function NuevaCuenta() {
+    var[validarCheck, setCheck] = useState(false);
 
+    var validarCuenta=false;
     const navigate= useNavigate();
+    const [isSubscribed, setIsSubscribed] = useState(false);
+
+    const handleChange = event => {
+      if (event.target.checked) {
+        setCheck(true);
+        console.log('✅ Checkbox is checked');
+        validarCheck=true;
+      } else {
+        console.log('⛔️ Checkbox is NOT checked');
+      }
+      setIsSubscribed(current => !current);
+    };
     const bienvenido=()=>{
+        if ((!/[^a-zA-Z]/.test(usernameReg))&&(!/[^a-zA-Z]/.test(apellido))&&passwordReg===password&&password===passwordReg
+        &&correo.includes("@")&&validarCheck==true){
+
+            validarCuenta=true;
+            alert('Cuenta Creada Exitosamente');
+        }else{
+            console.log('wtf: '+validarCheck)
+            alert('Error al Crear Cuenta');
+        }
+        if(validarCuenta==true){
+            navigate('/login'); 
+        }
+       
+    }
+    const bienvenido2=()=>{
         navigate('/login'); 
     }
 
     const crearCuenta = () =>{
-        Axios.post('http://localhost:3001/register', {
-            Primer_Nombre: usernameReg,
-            Primer_Apellido: apellido,
-            Passwordl: passwordReg,
-            Correo: correo,
-            Telefono: "55555555"
-        })
+        if(validarCuenta){
+            Axios.post('http://localhost:3001/register', {
+                Primer_Nombre: usernameReg,
+                Primer_Apellido: apellido,
+                Password: passwordReg,
+                Correo: correo
+                
+            })
+        }
     }
 
     const [usernameReg, setUernameReg] = useState('');
@@ -33,7 +64,7 @@ function NuevaCuenta() {
         
         <div className="principal-frame">
             <span className='span-unitec'>UNITEC<br></br>
-            <button onClick={()=>bienvenido()} className="btn-flecha-crear">
+            <button onClick={()=>bienvenido2()} className="btn-flecha-crear">
                 <i class="fa-solid fa-arrow-left fa-2xl flecha-crear"></i>
             </button>
            
@@ -51,27 +82,31 @@ function NuevaCuenta() {
                 <h4>Crear Cuenta</h4>
 
                 <div>
-                    <input type="text" placeholder="  Nombre" className="nombreC" 
-                    onChange={(e) => {setUernameReg(e.target.value)}}/>
+                    <input type="text" placeholder="  Nombre" className="nombreC" id="nombre"
+                   
+                    onChange={(e) => {setUernameReg(e.target.value)}}
+                    
+                    
+                    />
                 </div>
 
                 <div>
-                    <input type="text" placeholder="  Apellido" className="apellidoC" 
+                    <input type="text" placeholder="  Apellido" className="apellidoC" id="apellido"
                     onChange={(e) => {setApellido(e.target.value)}}/>
                 </div>
 
                 <div>
-                    <input type="email" placeholder="  Correo" className="correoC" 
+                    <input type="email" placeholder="  Correo" className="correoC"  id="correo"
                     onChange={(e) => {setCorreo(e.target.value)}}/>
                 </div>
 
                 <div>
-                    <input type="password" className="  passC" placeholder="Password" 
+                    <input type="password" className="  passC" placeholder="Password" id="password"
                     onChange={(e) => {setPasswordReg(e.target.value)}}/>
                 </div>
 
                 <div>
-                    <input type="password" className="  repeatPassC" placeholder="Repeat Password" 
+                    <input type="password" className="  repeatPassC" placeholder="Repeat Password" id="rep"
                     onChange={(e) => {setConfirmPass(e.target.value)}}/>
                 </div>
 
@@ -83,7 +118,11 @@ function NuevaCuenta() {
             <div className="permisos">
 
                 <div>
-                    <input type="checkbox" className="check1" value={1}/>
+                    <input type="checkbox" className="check1" 
+                    value={isSubscribed}
+                    onChange={handleChange}
+                    id="subscribe"
+                    name="subscribe"/>
                 </div>
                 
                 <p>Leo y Acepto los Términos de uso y condiciones</p>
@@ -92,7 +131,7 @@ function NuevaCuenta() {
 
             <div className="notificaciones">
                 <div>
-                    <input type="checkbox" className="check2" value={1}/>
+                    <input type="checkbox" className="check2" value={2}/>
                 </div>
                 
                 <p>Deseo recibir notificaciones en mi correo electronico</p>

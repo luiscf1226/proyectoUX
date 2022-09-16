@@ -49,7 +49,7 @@ function Login(){
             <span className='span-inicio'>Iniciar sesión</span>
             <form>
                 <div className="form-login">
-                    <input className='input1' placeholder='Correo o Celular' 
+                    <input type='email' className='input1' placeholder='Correo' 
                     onChange={(e) => {setCorreo(e.target.value)}}>
                     </input>
                     <input className='input2' placeholder='Contraseña' type='password'

@@ -25,6 +25,9 @@ function Sinopsis (){
     var nombreback=state.name;
     var sinopmain=state.sinop;
     var linkmg="'"+state.link+"'";
+    var genero=state.generop;
+    var duracion=state.duracionp;
+    var rating=state.ratingp;
     console.log(linkmg);
     const recibogo=()=>{
         navigate('/Recibo'); 
@@ -41,13 +44,13 @@ function Sinopsis (){
                     <h3 className="sinopsis-peli-title">{nombreback}</h3>
                     <div className="mega-div-info-sinop">
                         <div className="div-sinop-peli-info">
-                            <p className="info-sinop-nomain">120 min</p>
+                            <p className="info-sinop-nomain">{duracion}</p>
                         </div>
                         <div className="div-sinop-peli-info">
-                            <p className="info-sinop-nomain">R</p>
+                            <p className="info-sinop-nomain">{rating}</p>
                         </div>
                         <div className="div-sinop-peli-info">
-                            <p className="info-sinop-nomain">Action</p>
+                            <p className="info-sinop-nomain">{genero}</p>
                         </div>
                     </div>
                     

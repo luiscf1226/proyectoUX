@@ -12,7 +12,7 @@ const mysql = require('mysql2');
 const db = mysql.createConnection({
     user: 'root',
     host: 'localhost',
-    password: 'DA06PA07',
+    password: 'password',
     database: 'filmtrip',
  });
 
@@ -28,14 +28,13 @@ const db = mysql.createConnection({
  
         const Primer_Nombre = req.body.Primer_Nombre;
         const Primer_Apellido = req.body.Primer_Apellido;
-        const Passwordl = req.body.Passwordl;
+        const Password = req.body.Password;
         const Correo = req.body.Correo;
-        const Telefono = req.body.Telefono;
 
 
     db.execute(
-      'INSERT INTO usuario (ID_Usuario,Primer_Nombre, Primer_Apellido, Passwordl, Correo, Telefono) VALUES (?,?,?,?,?,?)',
-      [1,Primer_Nombre, Primer_Apellido, Passwordl, Correo, Telefono],
+      'INSERT INTO usuarios (Primer_Nombre, Primer_Apellido, Password, Correo) VALUES (?,?,?,?)',
+      [Primer_Nombre, Primer_Apellido, Password, Correo],
       (err, result)=> {
       console.log(err);
       console.log(err);
@@ -50,7 +49,7 @@ const db = mysql.createConnection({
     const password = req.body.Password;
     
     db.execute(
-        "SELECT * FROM usuario WHERE Correo = ? AND Passwordl = ?",
+        "SELECT * FROM usuarios WHERE Correo = ? AND Password = ?",
         [correo, password],
         (err, result)=> {
             if (err) {
