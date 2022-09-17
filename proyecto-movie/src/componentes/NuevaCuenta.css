@@ -26,6 +26,9 @@ div{
     border: none;
     
 }
+.terminos-n{
+    text-decoration: underline;
+}
 ::placeholder{
     text-align: center;
     height: 20px;

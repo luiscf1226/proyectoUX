@@ -47,7 +47,7 @@ const db = mysql.createConnection({
     
     const correo = req.body.Correo;
     const password = req.body.Password;
-    
+    var entrologin=false;
     db.execute(
         "SELECT * FROM usuarios WHERE Correo = ? AND Password = ?",
         [correo, password],
@@ -58,14 +58,20 @@ const db = mysql.createConnection({
             }
      
             if (result.length > 0) {
+                entrologin=true;
+                console.log(entrologin);
+                exports.entrologin=entrologin;
                 res.send( result);
                 console.log('Entro');
+                
                 }else{
-                    console.log('No se pudo')
+                    entrologin=false;
+                    console.log('No se pudo');
                     {message: "Wrong username/password combination!"};
                 }
             }
         
     )
+    
         }
  );

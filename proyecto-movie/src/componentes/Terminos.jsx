@@ -7,7 +7,7 @@ import './Terminos.css';
 function Terminos (){
     const navigate= useNavigate();
     const bienvenido=()=>{
-        navigate('/bienvenido'); 
+        navigate('/Crear-cuenta'); 
     }
 
 

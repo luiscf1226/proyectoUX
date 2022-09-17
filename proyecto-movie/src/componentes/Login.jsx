@@ -12,32 +12,49 @@ import {useState} from 'react';
 
 
 function Login(){
-    
-    const [correo, setCorreo] = useState('');
-    const [password, setPassword] = useState ('');
+    var [checkearLogin,setCheckL]=useState(false);
+    var [correo, setCorreo] = useState('');
+    var [password, setPassword] = useState ('');
 
-    const [loginStatus, setLoginStatus] = useState("");
-
-    const login = () => {
-        Axios.post('http://localhost:3001/login', {
-           Correo: correo,
-           Password: password,
-        }).then((response) => {
-           if (!response.data.message) {
-              setLoginStatus( response.data.message);
-           } else {
-              setLoginStatus (response.data[0].message);
-           }
-        });
-        };
+    var [loginStatus, setLoginStatus] = useState("");
+   
+    var login = () => {
+        
+        }
 
 
-    const navigate= useNavigate();
-    const crearcuenta=()=>{
+   var navigate= useNavigate();
+   var crearcuenta=()=>{
         navigate('/Crear-cuenta'); 
     }
-    const entrar=()=>{
-        navigate('/Cines'); 
+
+    var entrar=()=>{
+      
+        Axios.post('http://localhost:3001/login', {
+            Correo: correo,
+            Password: password,
+            })
+            .then((response) => {
+            
+            if(!response.data.message){
+                setCheckL(checkearLogin=true); 
+                
+                let s1=String(response.data[0].Correo);
+                let s2=String(correo);
+                if(s1!=s2){
+                    alert('no');
+                }
+                if(s1===s2){
+                    alert('Bienvenido usuario: '+response.data[0].Correo);
+                    navigate('/Cines'); 
+                }
+                 
+            }else if(response.data.message){
+                alert('NO');
+            }
+            });
+            
+
     }
    
     return (

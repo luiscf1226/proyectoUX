@@ -4,6 +4,7 @@ import logomain from '../images/logo-main.png';
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Axios from "axios";
+import Terminos from "./Terminos";
 
 function NuevaCuenta() {
     var[validarCheck, setCheck] = useState(false);
@@ -36,6 +37,9 @@ function NuevaCuenta() {
             navigate('/login'); 
         }
        
+    }
+    const terminos=()=>{
+        navigate('/terminos');
     }
     const bienvenido2=()=>{
         navigate('/login'); 
@@ -125,7 +129,7 @@ function NuevaCuenta() {
                     name="subscribe"/>
                 </div>
                 
-                <p>Leo y Acepto los Términos de uso y condiciones</p>
+                <p onClick={()=> {terminos()}} className="terminos-n">Leo y Acepto los Términos de uso y condiciones</p>
             </div>
 
 
