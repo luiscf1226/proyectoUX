@@ -3,7 +3,12 @@ import { useNavigate } from "react-router-dom";
 import './Recibo.css';
 import logomain from '../images/logo-main.png';
 import qr from '../images/barra.PNG';
+import {useLocation} from 'react-router-dom';
 function Recibo(){
+    const {state}=useLocation();
+    var cine=state.cine;
+    var horario=state.horario;
+    var pelicula=state.pelicula;
     const navigate= useNavigate();
     const retornocines=()=>{
         navigate('/Cines'); 
@@ -31,13 +36,14 @@ function Recibo(){
                     <p>Horario</p> 
                     <p>18:30PM</p>
                 </div>
-                <div className="div-cines-r">
+                <div className="div-cines-r3">
                     <p>Cine</p> 
-                    <p>Cinemark</p>
+                    <p>{cine}</p>
                 </div>
                 <div className="div-cines-r3">
-                    <p>Pelicula:</p> 
-                    <p>Super..Quien</p>
+                    <p>Pelicula:</p>
+                    <p>{pelicula}</p>
+                    
                 </div>
                 
                 <img className="qr-code-r" src={qr}></img>

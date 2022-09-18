@@ -16,12 +16,15 @@ function Sinopsis (){
         navigate('/Usuario'); 
     }
     const navigate= useNavigate();
-    const retornopeli=()=>{
-        navigate('/Peliculas'); 
+    const retornopeli2=()=>{
+        navigate('/Cines'); 
     }
-    const location = useLocation();
     
+    const location = useLocation();
+    var horario='';
+    var cine='';
     const {state}=useLocation();
+    var cine=state.cine;
     var nombreback=state.name;
     var sinopmain=state.sinop;
     var linkmg="'"+state.link+"'";
@@ -29,13 +32,23 @@ function Sinopsis (){
     var duracion=state.duracionp;
     var rating=state.ratingp;
     console.log(linkmg);
-    const recibogo=()=>{
-        navigate('/Recibo'); 
+   
+    const recibogo1=()=>{
+        navigate('/Recibo',{state:{hora:'15:50 pm',pelicula:nombreback,cine:cine}}); 
+    }
+    const recibogo2=()=>{
+        navigate('/Recibo',{state:{hora:'16:00 pm',pelicula:nombreback,cine:cine}}); 
+    }
+    const recibogo3=()=>{
+        navigate('/Recibo',{state:{hora:'18:30 pm',pelicula:nombreback,cine:cine}}); 
+    }
+    const recibogo4=()=>{
+        navigate('/Recibo',{state:{hora:'20:00 pm',pelicula:nombreback,cine:cine}}); 
     }
     return (
         <div className="sinopsis">
             <span className='span-unitec-principal-sinop'>UNITEC</span>
-            <button onClick={()=>retornopeli()} className="btn-flecha-s">
+            <button onClick={()=>retornopeli2()} className="btn-flecha-s">
                 <i className="fa-solid fa-arrow-left fa-2xl btn-flecha-sinop"></i>
             </button>
             <div className="main-info-sinop">
@@ -60,40 +73,40 @@ function Sinopsis (){
             </div>
             <span className="sinopsis-hoy">Hoy</span>
             <div className="div-hoy-s">
-                <div className="hoy-cuadro-s">
+                <div onClick={()=>recibogo1()} className="hoy-cuadro-s">
                     <p className="info-cuadro-s">15:50<br></br>2D<br></br>Doblada</p>
                 </div>
-                <div className="hoy-cuadro-s">
+                <div onClick={()=>recibogo2()} className="hoy-cuadro-s">
                 <p className="info-cuadro-s">16:00<br></br>2D<br></br>Sub</p>
                 </div>
-                <div className="hoy-cuadro-s">
+                <div onClick={()=>recibogo3()} className="hoy-cuadro-s">
                 <p className="info-cuadro-s">18:30<br></br>2D<br></br>Doblada</p>
                 </div>
-                <div className="hoy-cuadro-s">
+                <div onClick={()=>recibogo4()} className="hoy-cuadro-s">
                 <p className="info-cuadro-s">20:00<br></br>2D<br></br>Sub</p>
                 </div>
             </div>
             <span className="sinopsis-man">Mañana</span>
             <div className="div-man-s">
-                <div className="man-cuadro-s">
+                <div onClick={()=>recibogo1()} className="man-cuadro-s">
                 <p className="info-cuadro-s">15:50<br></br>2D<br></br>Doblada</p>
                 </div>
-                <div className="man-cuadro-s">
+                <div onClick={()=>recibogo2()} className="man-cuadro-s">
                 <p className="info-cuadro-s">16:00<br></br>2D<br></br>Sub</p>
                 </div>
-                <div className="man-cuadro-s">
+                <div onClick={()=>recibogo3()} className="man-cuadro-s">
                 <p className="info-cuadro-s">18:30<br></br>2D<br></br>Doblada</p>
                 </div>
-                <div className="man-cuadro-s">
+                <div onClick={()=>recibogo4()}  className="man-cuadro-s">
                 <p className="info-cuadro-s">20:00<br></br>2D<br></br>Sub</p>
                 </div>
             </div>
             <hr className="linea-div-s"></hr>
             <div className="peli-bar-s">
-               <button className="logos-peli-bara">
+               <button onClick={()=>retornopeli2()} className="logos-peli-bara">
                 <i className="fa-solid fa-house"></i>
                 </button>
-                <button onClick={()=>recibogo()} className="logos-peli-bara">
+                <button onClick={()=>recibogo1()} className="logos-peli-bara">
                 <i className="fa-solid fa-ticket"></i>
                 </button>
                 <button onClick={()=>moverUser()} className="logos-peli-bara">
